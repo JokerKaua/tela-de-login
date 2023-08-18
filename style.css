@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
   }
-
+  
   .login-container {
     background-color: #fff;
     border-radius: 5px;
@@ -15,16 +15,31 @@ body {
     padding: 20px;
     text-align: center;
   }
-
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+  }
+  
   input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 3px;
   }
-
+  
+  .lembrar {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    margin-top: 10px;
+    width: 40%;
+    height: 20px;
+    white-space: nowrap;
+  }
+  
   button {
+    margin-top: 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -32,17 +47,8 @@ body {
     padding: 10px 20px;
     cursor: pointer;
   }
-
+  
   button:hover {
     background-color: #0056b3;
   }
-
-  .lembrar  {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    margin-right: 200px;
-  }
-  
   
