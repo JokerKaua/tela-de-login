@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
+  background-color: #49014b;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -8,15 +8,24 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  animation: backgroundAnimation 5s infinite alternate;
+  animation: backgroundAnimation 7s infinite alternate;
 }
 
 @keyframes backgroundAnimation {
   0% {
-    background-color: #49014b;
+    background-color: #7b0080;
   }
   100% {
-    background-color: #291e2b;
+    background-color: #34003d;
+  }
+}
+
+@keyframes backgroundContainerAnimation {
+  0% {
+    background-color: #34003d;
+  }
+  100% {
+    background-color: #7b0080;
   }
 }
 
@@ -26,12 +35,18 @@ body {
   box-shadow: 6px 8px 11px rgba(41, 1, 36, 0.562);
   padding: 20px;
   text-align: center;
+  animation: backgroundContainerAnimation 7 infinite alternate;
 }
 
 .login-container h2 {
   margin-bottom: 20px;
   color: #c378e5;
 }
+
+:focus {
+  outline: 1px solid #a459ff;
+}
+
 
 input {
   width: 85%;
@@ -46,27 +61,82 @@ input {
 .lembrar {
   display: flex;
   align-items: center;
-  width: 50px;
+  width: 0px;
   margin-top: 10px;
   margin-left: 5%;
   white-space: nowrap;
   color: #a49cb7;
+  cursor: pointer;
 }
 
+
 .lembrar input[type="checkbox"] {
+  appearance: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 10px;
   margin-right: 5px;
+  border: 1px solid #6a399b;
+  border-radius: 5px;
+  background-color: #292c3a;
+  outline: none;
+  position: relative;
 }
+
+.lembrar input:focus {
+  border-color: #a459ff;
+}
+
+.lembrar input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 0.3s ease;
+  animation: fadeCheckboxMark 0.3s ease-in-out;
+}
+
+.lembrar input[type="checkbox"]:not(:checked)::after {
+  content: "✓";
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 0.3s ease;
+  animation: fadeCheckboxMark 0.3s ease-in-out reverse;
+}
+
+@keyframes fadeCheckboxMark {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #ffffff;
+  }
+} 
 
 button {
   background-color: #8438e1;
   color: #ffffff;
   border: none;
   border-radius: 3px;
+  margin-top: 10px;
+  margin-top: 10px;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #6934b1;
+  background-color: #602577;
+}
+
+footer {
+  color: rgba(30, 0, 30, 0.75);
+  position: absolute;
+  bottom: 10px;
+  size: 1%;
 }
