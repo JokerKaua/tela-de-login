@@ -1,54 +1,72 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  animation: backgroundAnimation 5s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #49014b;
   }
-  
-  .login-container {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+  100% {
+    background-color: #291e2b;
   }
-  
-  .login-container h2 {
-    margin-bottom: 20px;
-  }
-  
-  input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .lembrar {
-    display: flex;
-    font-size: 14px;
-    align-items: center;
-    margin-top: 10px;
-    width: 40%;
-    height: 20px;
-    white-space: nowrap;
-  }
-  
-  button {
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+}
+
+.login-container {
+  background-color: #530263;
+  border-radius: 5px;
+  box-shadow: 6px 8px 11px rgba(41, 1, 36, 0.562);
+  padding: 20px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #c378e5;
+}
+
+input {
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #1a1619;
+  border-radius: 6px;
+  background-color: #22151e;
+  color: #ffffff;
+}
+
+.lembrar {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 5%;
+  white-space: nowrap;
+  color: #a49cb7;
+}
+
+.lembrar input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #8438e1;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6934b1;
+}
