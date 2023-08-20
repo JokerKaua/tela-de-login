@@ -8,34 +8,26 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  animation: backgroundAnimation 7s infinite alternate;
+  animation: backgroundAnimation 5s infinite alternate;
 }
 
 @keyframes backgroundAnimation {
   0% {
-    background-color: #7b0080;
+    background-color: #800285;
   }
   100% {
-    background-color: #34003d;
-  }
-}
-
-@keyframes backgroundContainerAnimation {
-  0% {
-    background-color: #34003d;
-  }
-  100% {
-    background-color: #7b0080;
+    background-color: #5d006d;
   }
 }
 
 .login-container {
   background-color: #530263;
   border-radius: 5px;
+  width: 45%;
   box-shadow: 6px 8px 11px rgba(41, 1, 36, 0.562);
   padding: 20px;
   text-align: center;
-  animation: backgroundContainerAnimation 7 infinite alternate;
+  animation: backgroundAnimation 5s infinite alternate-reverse;
 }
 
 .login-container h2 {
@@ -47,9 +39,28 @@ body {
   outline: 1px solid #a459ff;
 }
 
+.login-container label {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.login-container label span {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color:#a49cb7;
+}
+
+/*
+    AAAAAAAAAAAAAAAAA
+*/
 
 input {
-  width: 85%;
+  width: 90%;
+  height: 30px;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #1a1619;
@@ -69,12 +80,17 @@ input {
   cursor: pointer;
 }
 
+.lembrar span {
+  margin-top: -2px;
+  margin-left: 28px;
+}
 
 .lembrar input[type="checkbox"] {
   appearance: none;
   cursor: pointer;
   -webkit-appearance: none;
   width: 10px;
+  height: 0px;
   margin-right: 5px;
   border: 1px solid #6a399b;
   border-radius: 5px;

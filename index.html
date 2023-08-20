@@ -10,11 +10,18 @@
     <div class="login-container">
       <h2>Tela de Login</h2>
       <form>
-        <input id="username" type="text" placeholder="Usuário" required>
-        <input id="password" type="password" placeholder="Senha" required>
+
+        <label class="usuario">
+          <span>Usuário</span>
+          <input id="username" type="text" required>
+        </label>
+        <label class="senha"> 
+          <span>Senha</span>
+          <input id="password" type="password" required>
+        </label>
         <label class="lembrar">
-            <input calss="lembrar" id="lembrar" type="checkbox"> 
-            Lembrar usuário
+          <input calss="lembrar" id="lembrar" type="checkbox"> 
+          <span>Lembrar usuário</span>
         </label>
         <button type="button" id="login">Login</button>
       </form>
