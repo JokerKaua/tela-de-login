@@ -5,21 +5,24 @@ const loginButton =  document.getElementById("login")
 loginButton.addEventListener("click", login)
 
 //Animação dos spans
-
 const userSpan = document.getElementsByClassName('usuario');
 const passSpan = document.getElementsByClassName('senha');
 
-spanAct(userSpan); 
+spanAct(userSpan);
 spanAct(passSpan);
 
-function spanAct(elemento){
-  elemento[0].children[1].addEventListener('focus', ()=> {
-     elemento[0].children[0].classList.add('spanact');
+function spanAct(elemento) {
+  const inputElement = elemento[0].querySelector('input'); // Seleciona o input dentro do elemento
+
+  inputElement.addEventListener('focus', () => {
+    elemento[0].children[0].classList.add('spanact');
   });
-  elemento[0].children[1].addEventListener('blur', () => {
-    elemento[0].children[0].classList.remove('spanact');
+
+  inputElement.addEventListener('blur', () => {
+    if (inputElement.value.trim() === '') { // Verifica se o valor está vazio ou contém apenas espaços
+      elemento[0].children[0].classList.remove('spanact');
+    }
   });
-  
 }
 
 function login() {
