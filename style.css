@@ -178,3 +178,26 @@ footer {
   bottom: 10px;
   size: 1%;
 }
+
+@media (max-width: 600px) {
+  body {
+    display: block;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .login-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .login-container h2 {
+    font-size: 22px; 
+  }
+
+  .usuario input, .senha input {
+    width: 90%; 
+    font-size: 18px;
+    padding-top: 20px;
+  }
+}
