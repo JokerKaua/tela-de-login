@@ -174,25 +174,34 @@ button:hover {
 
 footer {
   color: rgba(30, 0, 30, 0.75);
+  width: 100%;
   position: absolute;
-  bottom: 10px;
-  size: 1%;
+  bottom: 4px;
+  font-size: 11px;
+  padding: 5px 0;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
   body {
     display: block;
     text-align: center;
-    padding: 12px;
+    margin-top: 10%;
   }
 
   .login-container {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .login-container h2 {
-    font-size: 22px; 
+    font-size: 24px; 
+  }
+  
+  button#login {
+    width: 40%;
+    height: 45px;
+    font-size: 16px;
   }
 
   .usuario input, .senha input {
