@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #49014b;
+  background-color: #000000;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -8,35 +8,47 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  animation: backgroundAnimation 5s infinite alternate;
+  animation: backgroundAnimation 9s infinite alternate;
 }
 
 @keyframes backgroundAnimation {
   0% {
-    background-color: #800285;
+    background-color: #4d4d4d;
   }
   100% {
-    background-color: #5d006d;
+    background-color: #000000;
   }
 }
 
 .login-container {
-  background-color: #530263;
+  background-color: #4d4d4d;
   border-radius: 5px;
-  width: 45%;
-  box-shadow: 6px 8px 11px rgba(41, 1, 36, 0.562);
+  width: 400px;
+  box-shadow: 6px 6px 18px rgba(53, 53, 53, 0.562);
   padding: 20px;
   text-align: center;
-  animation: backgroundAnimation 5s infinite alternate-reverse;
+  animation: backgroundAnimation 9s infinite alternate-reverse;
 }
 
 .login-container h2 {
-  margin-bottom: 20px;
-  color: #c378e5;
+  margin-bottom: 22px;
+  color: #ffffff;
+  font-size: 32px;
+  text-shadow: 3px 3px 8px rgba(200, 200, 200, 0.7);
+  animation: textShadowAnimation 9s infinite alternate-reverse;
+}
+
+@keyframes textShadowAnimation {
+  0% {
+    text-shadow: 6px 8px 11px rgb(0, 0, 0);
+  }
+  100% {
+    text-shadow: 3px 3px 8px rgba(200, 200, 200, 0.7);
+  }
 }
 
 :focus {
-  outline: 1px solid #a459ff;
+  outline: 1px solid #ffffff;
 }
 
 .login-container label {
@@ -51,7 +63,7 @@ body {
   left: 5%;
   transform: translateY(-50%);
   font-size: 14px;
-  color:#a49cb7;
+  color:#dbdbdb;
 }
 
 .usuario span,
@@ -86,10 +98,14 @@ input {
   height: 30px;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #1a1619;
+  border: 1px solid #202020;
   border-radius: 6px;
-  background-color: #22151e;
+  background-color: #1b1b1b;
   color: #ffffff;
+}
+
+.usuario input, .senha input {
+  padding-top: 12px;
 }
 
 .lembrar {
@@ -99,7 +115,7 @@ input {
   margin-top: 10px;
   margin-left: 5%;
   white-space: nowrap;
-  color: #a49cb7;
+  color: #c2c2c2;
   cursor: pointer;
 }
 
@@ -115,15 +131,15 @@ input {
   width: 10px;
   height: 0px;
   margin-right: 5px;
-  border: 1px solid #6a399b;
+  border: 1px solid #222;
   border-radius: 5px;
-  background-color: #292c3a;
+  background-color: #444444;
   outline: none;
   position: relative;
 }
 
 .lembrar input:focus {
-  border-color: #a459ff;
+  border-color: #ffffff;
 }
 
 .lembrar input[type="checkbox"]:checked::after {
@@ -158,22 +174,23 @@ input {
 } 
 
 button {
-  background-color: #8438e1;
+  background-color: #808080;
   color: #ffffff;
   border: none;
   border-radius: 3px;
   margin-top: 6px;
   padding: 10px 20px;
   cursor: pointer;
+  box-shadow: 4px 4px 5px #000;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #602577;
+  background-color: #555;
 }
 
 footer {
-  color: rgba(30, 0, 30, 0.75);
+  color: rgba(200, 200, 200, 0.75);
   width: 100%;
   position: absolute;
   bottom: 4px;
@@ -182,7 +199,7 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   body {
     display: block;
     text-align: center;
