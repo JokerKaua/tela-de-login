@@ -1,7 +1,7 @@
 # 🚀  Projeto da aula - Tela de Login
 
 **Criando tela de login com conexão ao MongoDB.** <br>
-**[Clique aqui para acessar a tela de login](https://jokerkaua.github.io/tela-de-login/login-page/)**
+**[Clique para acessar a tela de página de login](https://jokerkaua.github.io/tela-de-login/login-page/)** (temporário)
 
 ## 📋 Pra fazer
 
