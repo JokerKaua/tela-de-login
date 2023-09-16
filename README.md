@@ -17,9 +17,12 @@
 * Tela de login
 * Estilizamento
 
-## 🛠️ Ferramentas
+## 🛠️ Tecnologias e linguagens usadas
 
+* [NodeJs](https://nodejs.org) - Javascript para o backend
 * [MongoDB](https://www.mongodb.com/pt-br) - Plataforma para gerenciamento de banco de dados
+* Javascript, HTML e CSS - Linguagens de programação e marcação para as páginas
+* SQL - Linguagem para o BD 
 
 ## ✒️ Autores
 
