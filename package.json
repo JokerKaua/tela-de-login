@@ -1,0 +1,17 @@
+{
+  "name": "tela-de-login",
+  "version": "1.0.0",
+  "description": "**Criando tela de login com conexão ao MongoDB.** <br>\r **[Clique para acessar a tela de página de login](https://jokerkaua.github.io/tela-de-login/login-page/)** (temporário)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
