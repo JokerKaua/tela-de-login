@@ -3,6 +3,11 @@
 **Criando tela de login com conexão ao MongoDB.** <br>
 **[Clique para acessar a tela de página de login](https://jokerkaua.github.io/tela-de-login/login-page/)** (temporário)
 
+**Instalar as dependências**
+```
+    npm install
+```
+
 ## 📋 Pra fazer
 
 * Banco de dados
