@@ -1,11 +1,15 @@
-const express = require('express')
-const app = express()
-const bodyParser = require('body-parser')
-const port = 3000
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
 
 
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use('/login', express.static('login-page'));    
+const app = express();
+const port = 3000;
+
+
+app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(express.static('public'));   
+app.use(express.static('login-page')); 
 
 app.get('/', (req, res) => {
     res.redirect('/login');
@@ -16,9 +20,11 @@ app.get('/login', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
-  res.send(`Paramters: ${req.params}`);
+  res.type('application/json').send(req.body);
+  console.log(req.body);
+  console.log(req.query.username);
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`App listening on port ${port}`);
 })
