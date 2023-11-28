@@ -27,7 +27,11 @@
 * [NodeJs](https://nodejs.org) - Javascript para o backend
 * [MongoDB](https://www.mongodb.com/pt-br) - Plataforma para gerenciamento de banco de dados
 * Javascript, HTML e CSS - Linguagens de programação e marcação para as páginas
-* SQL - Linguagem para o BD 
+* ~~ SQL - Linguagem para o BD ~~ 
+* [JSON](https://www.json.org/json-en.html) - Formato em que será utilizado no mongodb.
+
+- [ ] SQL
+- [x] JSON
 
 ## ✒️ Autores
 
