@@ -3,9 +3,15 @@
 **Criando tela de login com conexão ao MongoDB.** <br>
 **[Clique para acessar a tela de página de login](https://jokerkaua.github.io/tela-de-login/login-page/)** (temporário)
 
-**Instalar as dependências**
+**Instalar as dependências e configurações iniciais**
+
+- Para instalar todas bibliotecas do Node:
 ```
     npm install
+```
+- Configuração inicial do banco de dados (Atenção: Esse script não faz parte do servidor)
+```
+    node database.js
 ```
 
 ## 📋 Pra fazer
@@ -26,7 +32,7 @@
 * [NodeJs](https://nodejs.org) - Javascript para o backend
 * [MongoDB](https://www.mongodb.com/pt-br) - Plataforma para gerenciamento de banco de dados
 * Javascript, HTML e CSS - Linguagens do front-end
-* ~~SQL - Linguagem para o BD~~ 
+* ~~SQL - Linguagem para o BD~~
 
 ## ✒️ Autores
 
